@@ -104,7 +104,7 @@ public class DateDistance {
             daysApart = monthLength(x, year0) + daysApart;
         }
         for(long y = 1; y < month1; y++){
-            daysApart = daysApart - monthLength(y, year0);
+            daysApart = daysApart - monthLength(y, year1);
         }
         daysApart = daysApart + day0 - day1;
         return daysApart;
